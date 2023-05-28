@@ -304,45 +304,47 @@
                     </svg>
                 </button>
                 <p class="modal-form-title">Leave your contacts and we will call you back</p>
-                <div class="modal-contact-form">
-                    <label class="contact-form-field-wrapper" for="name">Name</label>
-                    <div class="input-container">
-                            <input id="name" class="contact-form-input" type="text" name="user_first_name" /> 
+                <form>
+                    <div class="modal-contact-form">
+                        <label class="contact-form-field-wrapper" for="name">Name</label>
+                        <div class="input-container">
+                                <input id="name" class="contact-form-input" type="text" name="user_first_name" /> 
+                                <svg class="contact-form-input-icon">
+                                    <use href="./images/icons.svg#icon-person-black-18dp"></use>
+                                </svg>
+                        </div>
+                        
+                        <label class="contact-form-field-wrapper" for="phone">Phone</label>
+                        <div class="input-container">
+                            <input id="phone" class="contact-form-input" type="tel" name="user_phone" title="xxx-xxx-xx-xx" />
                             <svg class="contact-form-input-icon">
-                                <use href="./images/icons.svg#icon-person-black-18dp"></use>
+                                <use href="./images/icons.svg#icon-phone-black-18dp"></use>
                             </svg>
+                        </div>
+                        <label class="contact-form-field-wrapper" for="email">Email</label>
+                        <div class="input-container">
+                            <input id="email" class="contact-form-input" type="email" name="user_first_email" />
+                            <svg class="contact-form-input-icon">
+                                <use href="./images/icons.svg#icon-email-black-18dp"></use>
+                            </svg>
+                        </div>
+                        
+                        <label class="contact-form-field-wrapper" for="comment">Comment</label>
+                        <div class="input-container">
+                            <textarea id="comment" class="contact-form-message" name="user_message" placeholder="Text input" ></textarea>
+                        </div>
+                        <label class="contact-form-checkbox-wrapper" for="uzer_polisy">
+                            <input id="uzer_polisy" class="contact-form-checkbox" type="checkbox" name="uzer_polisy" value="" />
+                            <svg class="contact-form-own-checkbox" width="16" height="16">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                            <span class="contact-form-field-desc">
+                                I accept the terms and conditions of the Privacy Policy 
+                            </span>                               
+                        </label>
+                        <button type="submit" class="contact-form-submit">Send</button>
                     </div>
-                    
-                    <label class="contact-form-field-wrapper" for="phone">Phone</label>
-                    <div class="input-container">
-                        <input id="phone" class="contact-form-input" type="tel" name="user_phone" title="xxx-xxx-xx-xx" />
-                        <svg class="contact-form-input-icon">
-                            <use href="./images/icons.svg#icon-phone-black-18dp"></use>
-                        </svg>
-                    </div>
-                    <label class="contact-form-field-wrapper" for="email">Email</label>
-                    <div class="input-container">
-                        <input id="email" class="contact-form-input" type="email" name="user_first_email" />
-                        <svg class="contact-form-input-icon">
-                            <use href="./images/icons.svg#icon-email-black-18dp"></use>
-                        </svg>
-                    </div>
-                    
-                    <label class="contact-form-field-wrapper" for="comment">Comment</label>
-                    <div class="input-container">
-                        <textarea id="comment" class="contact-form-message" name="user_message" placeholder="Text input" ></textarea>
-                    </div>
-                    <label class="contact-form-checkbox-wrapper" for="uzer_polisy">
-                        <input id="uzer_polisy" class="contact-form-checkbox" type="checkbox" name="uzer_polisy" value="" />
-                        <svg class="contact-form-own-checkbox" width="16" height="16">
-                            <use href="./images/icons.svg#icon-checkmark"></use>
-                        </svg>
-                        <span class="contact-form-field-desc">
-                            I accept the terms and conditions of the Privacy Policy 
-                        </span>                               
-                    </label>
-                    <button type="submit" class="contact-form-submit">Send</button>
-                </div>
+                </form>
             </div>
         </div>    
         <script src="./js/modal.js"></script>

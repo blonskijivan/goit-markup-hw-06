@@ -669,31 +669,41 @@ body {
     appearance: none;
     position: absolute;
 }
-.contact-form-own-checkbox {
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent; 
     width: 16px;
     height: 16px;
     margin-right: 8px;
     border-radius: 4px;
     cursor: pointer;
-    border: 1px solid #555555;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 2px;
 }
-.contact-form-checkbox:focus + .contact-form-own-checkbox {
+.contact-form-checkbox:focus + .contact-form-checkbox-wrapper  .custom-checkbox {
     outline: 2px solid rgba(0,0,255,0.5);
 }
-.contact-form-own-checkbox use {
-    opacity: 0;
+.contact-form-checkbox:checked + .contact-form-checkbox-wrapper .custom-checkbox {
+    background-color:  #404bbf;
+    border: none;
+    fill: #ffffff;
+    border-color: #404bbf;
 }
-.contact-form-checkbox:checked + .contact-form-own-checkbox use {
-    opacity: 1;
+.modal-privacy {
+    color: #4d5ae5;
 }
 .contact-form-submit {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -703,7 +713,7 @@ body {
     color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects {
     padding: 96px 0 120px;

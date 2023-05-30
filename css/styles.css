@@ -616,7 +616,11 @@ body {
 .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
     margin-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
     font-style: normal;
+    line-height: 1.17;
 }
 .contact-form-field-desc {
     font-size: 12px;
